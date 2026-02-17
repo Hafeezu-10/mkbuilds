@@ -3245,3 +3245,131 @@ video {
     height: 200px;
   }
 }
+/* Materials Showcase - Clean Layout */
+.materials-showcase {
+    padding: 60px 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.showcase-title {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.showcase-subtitle {
+    color: #666;
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+.showcase-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    justify-content: center;
+    align-items: start;
+    padding: 0 20px;
+}
+
+.showcase-item {
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.showcase-item:hover {
+    transform: translateY(-5px);
+}
+
+.item-image {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #f0f0f0;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.showcase-item:hover .item-image {
+    border-color: #000;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.item-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.showcase-item:hover .item-image img {
+    transform: scale(1.1);
+}
+
+.item-name {
+    font-size: 18px;
+    color: #333;
+    margin: 15px 0 10px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.item-price {
+    font-size: 22px;
+    font-weight: bold;
+    color: #000;
+    margin: 5px 0;
+}
+
+.item-price span {
+    font-size: 14px;
+    font-weight: normal;
+    color: #888;
+    display: block;
+    margin-top: 5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .showcase-title {
+        font-size: 28px;
+    }
+    
+    .showcase-subtitle {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+    
+    .showcase-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 20px;
+    }
+    
+    .item-image {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .item-name {
+        font-size: 16px;
+    }
+    
+    .item-price {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .showcase-grid {
+        grid-template-columns: 1fr;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+}
+
