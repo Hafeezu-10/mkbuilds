@@ -3372,4 +3372,57 @@ video {
         margin: 0 auto;
     }
 }
+/* Ash Container */
+.ash-container {
+    background-color: #f5f5f5;  /* Light ash color */
+    padding: 60px 20px;
+    width: 100%;
+}
+
+/* Optional: Different ash shades if needed */
+.ash-container-dark {
+    background-color: #e0e0e0;  /* Darker ash */
+}
+
+.ash-container-light {
+    background-color: #fafafa;  /* Lighter ash */
+}
+
+/* Update materials showcase to remove old background */
+.materials-showcase {
+    padding: 0;  /* Remove padding since container handles it */
+    background: none;  /* Remove any existing background */
+}
+
+/* Update tools matter to remove old background */
+.tools-matter {
+    padding: 0;  /* Remove padding since container handles it */
+    background: none;  /* Remove any existing background */
+}
+
+/* Make sure content is centered and max-width is controlled */
+.ash-container .showcase-title,
+.ash-container h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.ash-container .showcase-grid,
+.ash-container .benefits-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .ash-container {
+        padding: 40px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ash-container {
+        padding: 30px 10px;
+    }
+}
 
