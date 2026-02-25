@@ -3277,7 +3277,6 @@ video {
 .showcase-item {
     flex: 1 1 220px;
     max-width: 300px; /* optional guardrail */
-    padding: 20px;
     transition: transform 0.3s ease;
 }
 
@@ -3398,6 +3397,7 @@ video {
         padding: 30px 10px;
     }
 }
+
 
 
 
