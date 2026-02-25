@@ -3267,11 +3267,9 @@ video {
 }
 
 .showcase-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 30px;
-    justify-content: center;
-    align-items: start;
+    display: flex;
+    flex-wrap: wrap
+    align-items: center;
     padding: 0 20px;
 }
 
@@ -3425,6 +3423,7 @@ video {
         padding: 30px 10px;
     }
 }
+
 
 
 
