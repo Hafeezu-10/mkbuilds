@@ -3270,7 +3270,7 @@ video {
     display: flex;
     flex-wrap: wrap;
     align-items: center;      /* vertical alignment */
-   justify-content: space-around;
+   justify-content: center;
     gap: 20px;                /* spacing without margin hacks */
 }
 
@@ -3398,6 +3398,7 @@ video {
         padding: 30px 10px;
     }
 }
+
 
 
 
