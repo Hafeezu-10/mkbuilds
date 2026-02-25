@@ -3269,7 +3269,7 @@ video {
 .showcase-grid {
    width: 100%;
     display: flex;
-    flex-wrap: wrap
+    flex-wrap: wrap;
     align-items: center;
     padding: 0 20px;
 }
@@ -3394,7 +3394,6 @@ video {
     text-align: center;
 }
 
-.ash-container .showcase-grid,
 .ash-container .benefits-grid {
     max-width: 1200px;
     margin: 0 auto;
@@ -3412,6 +3411,7 @@ video {
         padding: 30px 10px;
     }
 }
+
 
 
 
