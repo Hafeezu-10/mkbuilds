@@ -3267,15 +3267,16 @@ video {
 }
 
 .showcase-grid {
-   width: 100%;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: center;      /* vertical alignment */
+    gap: 20px;                /* spacing without margin hacks */
     padding: 0 20px;
 }
 
 .showcase-item {
-    text-align: center;
+    flex: 1 1 220px;
+    max-width: 300px; /* optional guardrail */
     padding: 20px;
     transition: transform 0.3s ease;
 }
@@ -3411,6 +3412,7 @@ video {
         padding: 30px 10px;
     }
 }
+
 
 
 
