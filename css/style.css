@@ -3270,8 +3270,9 @@ video {
     display: flex;
     flex-wrap: wrap;
     align-items: center;      /* vertical alignment */
-   justify-content: center;
+    justify-content: space-evenly;
     gap: 20px;                /* spacing without margin hacks */
+   
 }
 
 .showcase-item {
@@ -3397,6 +3398,7 @@ video {
         padding: 30px 10px;
     }
 }
+
 
 
 
