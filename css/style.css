@@ -3286,10 +3286,10 @@ video {
 }
 
 .item-image {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 300px;
     margin: 0 auto 20px;
-    border-radius: 50%;
+    border-radius: 15px;
     overflow: hidden;
     border: 3px solid #f0f0f0;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
@@ -3425,4 +3425,5 @@ video {
         padding: 30px 10px;
     }
 }
+
 
