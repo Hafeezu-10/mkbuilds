@@ -3286,8 +3286,8 @@ video {
 }
 
 .item-image {
-    width: 200px;
-    height: 300px;
+    width: 300px;
+    height: 400px;
     margin: 0 auto 20px;
     border-radius: 15px;
     overflow: hidden;
@@ -3425,5 +3425,6 @@ video {
         padding: 30px 10px;
     }
 }
+
 
 
