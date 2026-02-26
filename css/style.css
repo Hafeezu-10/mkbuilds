@@ -3402,6 +3402,89 @@ video {
 
 
 
+/* ===== LOAD MORE BUTTON STYLES ===== */
+.load-more {
+    text-align: center;
+    margin: 40px 0;
+    width: 100%;
+}
+
+#loadMoreBtn, #showLessBtn {
+    background: linear-gradient(45deg, #e67e22, #d35400);
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(230, 126, 34, 0.3);
+    border: none;
+}
+
+#showLessBtn {
+    background: #2c3e50;
+    box-shadow: 0 5px 15px rgba(44, 62, 80, 0.3);
+}
+
+#loadMoreBtn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(230, 126, 34, 0.4);
+}
+
+#showLessBtn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(44, 62, 80, 0.4);
+}
+
+#loadMoreBtn i, #showLessBtn i {
+    font-size: 1.2rem;
+}
+
+/* Hidden projects styling */
+.hidden-projects {
+    display: none;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+    animation: fadeIn 0.5s ease;
+}
+
+.hidden-projects.show {
+    display: grid;
+}
+
+@keyframes fadeIn {
+    from { 
+        opacity: 0; 
+        transform: translateY(20px); 
+    }
+    to { 
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+
+/* Responsive for buttons */
+@media (max-width: 768px) {
+    #loadMoreBtn, #showLessBtn {
+        padding: 12px 30px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #loadMoreBtn, #showLessBtn {
+        padding: 10px 25px;
+        font-size: 0.9rem;
+        width: 90%;
+        justify-content: center;
+    }
+}
 
 
 
